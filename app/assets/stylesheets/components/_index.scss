@@ -3,3 +3,13 @@
 @import "avatar";
 @import "form_legend_clear";
 @import "navbar";
+@import "sidebar";
+@import "tendencies";
+@import "tweet";
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto';
+  margin-top: 30px;
+}

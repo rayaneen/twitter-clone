@@ -13,9 +13,21 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
+    <div class="container">
+      <div class="row">
+        <div class="col sidebar">
+          <%= render 'shared/sidebar' %>
+        </div>
 
-    <%= yield %>
+        <%= render 'shared/flashes' %>
+
+        <div class="col">
+          <%= yield %>
+        </div>
+        <div class="col">
+          <%= render 'shared/tendencies' %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
