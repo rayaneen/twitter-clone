@@ -3,7 +3,9 @@
   font-weight: bold;
 }
 
-
+p {
+  line-height: 40%;
+}
 .avatar {
   margin-right: 10px;
   border-radius: 50%;
@@ -38,4 +40,12 @@
   justify-content: space-between;
   color: #71767B;
   font-weight: lighter;
+  margin-top: 16px;
+  width: 90%;
+}
+
+.tweet-pic {
+  border-radius: 8px;
+  width: 90%;
+  height: auto;
 }

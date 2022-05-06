@@ -4,7 +4,12 @@
     <%= simple_form_for(@tweet) do |f| %>
       <%= f.input :content, label: false, placeholder: "What's happening?", input_html: { class: "tweet-input" }  %>
       <div class="form-footer">
-        <%= f.input :photo, as: :file %>
+        <label class="form-photo">
+          <i class="fa-solid fa-image"></i>
+            <span class="d-none">
+              <%= f.input :photo, as: :file, label:false %>
+            </span>
+        </label>
         <%= f.submit 'Tweet', class:"tweet-btn"%>
       </div>
     <% end %>

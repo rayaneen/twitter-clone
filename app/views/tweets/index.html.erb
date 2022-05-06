@@ -16,7 +16,7 @@
             </div>
             <div class="picture">
               <% if tweet.photo.attached?%>
-                <%= cl_image_tag tweet.photo.key, height: 300, width: 400, crop: :fill %>
+                <%= cl_image_tag tweet.photo.key, class: "tweet-pic", crop: :fill %>
               <%end%>
             </div>
             <div class="tweet-footer">
