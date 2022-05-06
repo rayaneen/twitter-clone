@@ -1,5 +1,26 @@
-<p> This is a tweet</p>
-  <% @tweets.each do |tweet|%>
-    <p><%= tweet.content%></p>
-
-  <%end%>
+<div class="home">
+  <div class="home-bar">
+    <h1>Home</h1>
+    <i class="fa-solid fa-ranking-star"></i>
+  </div>
+  <%= render 'new' %>
+      <% @tweets.each do |tweet|%>
+        <div class="tweet">
+        <img src="<%= User.find(tweet.user_id).avatar %>" alt="Avatar" class="avatar">
+          <div class="tweet-info">
+            <p><%= User.find(tweet.user_id).username %> <span class="account-name"><%= User.find(tweet.user_id).account_name %>
+            · <%= tweet.created_at%>
+            </span></p>
+            <div class="tweet-content">
+              <p><%= tweet.content%></p>
+            </div>
+            <div class="tweet-footer">
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+          </div>
+        </div>
+      <%end%>
+</div>

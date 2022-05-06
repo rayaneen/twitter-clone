@@ -1,0 +1,9 @@
+<div class="tweet-form">
+<img src="<%= current_user.avatar%>" alt="Your avatar" class="avatar">
+  <div class="form">
+    <%= simple_form_for(@tweet) do |f| %>
+      <%= f.input :content, label: false, placeholder: "What's happening?", input_html: { class: "tweet-input" }  %>
+      <%= f.submit 'Tweet', class:"tweet-btn"%>
+    <% end %>
+  </div>
+</div>

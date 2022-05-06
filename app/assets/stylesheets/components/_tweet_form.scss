@@ -1,0 +1,34 @@
+.tweet-form {
+  padding-left: 16px;
+  display: flex;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  padding-right: 30px;
+}
+.tweet-input {
+  background-color: #000;
+  border: none;
+  resize: none;
+}
+.tweet-input:focus {
+  background-color: #000;
+  color: white;
+}
+
+.tweet-btn {
+  background-color: #1DA1F2;
+  color: white;
+  font-weight: bold;
+  width: 30%;
+  border-radius: 50px;
+  padding: 12px 20px;
+  text-align: center;
+  margin-left: 70%;
+}
+.tweet-btn:hover {
+  transition: 0.3s;
+  background-color: #1A8CD8;
+}

@@ -15,18 +15,16 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col sidebar">
+        <div class="col-md-3 sidebar">
           <%= render 'shared/sidebar' %>
         </div>
-
-        <%= render 'shared/flashes' %>
-
-        <div class="col">
+        <div class="col-md-6 feed">
           <%= yield %>
         </div>
-        <div class="col">
-          <%= render 'shared/tendencies' %>
+        <div class="col-md-3">
+          <%= render 'shared/trending' %>
         </div>
+        <%= render 'shared/flashes' %>
       </div>
     </div>
   </body>
