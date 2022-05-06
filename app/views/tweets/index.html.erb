@@ -14,6 +14,11 @@
             <div class="tweet-content">
               <p><%= tweet.content%></p>
             </div>
+            <div class="picture">
+              <% if tweet.photo.attached?%>
+                <%= cl_image_tag tweet.photo.key, height: 300, width: 400, crop: :fill %>
+              <%end%>
+            </div>
             <div class="tweet-footer">
               <i class="fa-regular fa-comment"></i>
               <i class="fa-solid fa-retweet"></i>
